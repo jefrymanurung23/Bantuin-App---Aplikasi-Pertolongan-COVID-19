@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SplashScreen">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textGo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bantuin_logo"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BANTUIN"
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:textColor="@color/colorSecondary"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_bantuin"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_light"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_started"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:textColor="@color/colorPrimary"/>
+        
+        <ImageButton
+            android:id="@+id/buttonGo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_arrow"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+</RelativeLayout>

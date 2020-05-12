@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bantuin</string>
+    <string name="about_bantuin">BANTUIN adalah aplikasi yang diciptakan untuk membantu orang-orang dalam menghadapi ancaman coronavirus disease (COVID-19).\n\n- Jefri Manurung -</string>
+    <string name="get_started">Get Started</string>
+    <string name="batuk_kering">Batuk kering merupakan batuk yang tak menghasilkan lendir atau dahak.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

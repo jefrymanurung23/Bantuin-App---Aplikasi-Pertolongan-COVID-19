@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutContactItem"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/card_bg"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_bg_hospital">
+
+        <ImageView
+            android:id="@+id/imageContact"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_local_hospital_black_24dp"
+            android:tint="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="234dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/textViewContactName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/gilroy_extrabold"
+            android:text="Contact Name"
+            android:textColor="@color/colorGrey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="Phone Number"
+            android:textColor="@color/colorGrey"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:gravity="end">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_centerInParent="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_bg_call">
+
+                <RelativeLayout
+                    android:id="@+id/buttonCall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true">
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
